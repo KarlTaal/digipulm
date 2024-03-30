@@ -5,14 +5,14 @@ import { TimeUntilComponent } from './components/time-until/time-until.component
 import { LocationInformationComponent } from './components/location-information/location-information.component';
 import { RegisterComponent } from './components/register/register.component';
 import { TimetableComponent } from './components/timetable/timetable.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ RouterOutlet, HeaderComponent, TimeUntilComponent, LocationInformationComponent, RegisterComponent, TimetableComponent ],
+  imports: [ RouterOutlet, HeaderComponent, TimeUntilComponent, LocationInformationComponent, RegisterComponent, TimetableComponent, FooterComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'digipulm';
 }
