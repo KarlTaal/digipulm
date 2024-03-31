@@ -41,6 +41,14 @@
   color: var(--line_color);
   letter-spacing: 2px;
   transition: all .3s ease;
+
+  &:focus, :focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 0.063rem #FFFFFF, 0 0 0 0.188rem #FF5733;
+  }
 }
 
 .button__text {
