@@ -1,49 +1,87 @@
-.wedding-header__container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.wedding-header {
+  &__text-container {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
 
-  background-image: url("../../../assets/header.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &__text-date {
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+  }
 
-  height: 25rem;
-}
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
-.wedding-header__text {
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin-bottom: 4rem;
+    background-image: url("../../../assets/header.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 25rem;
+  }
+
+  &__separator {
+    border-top: solid 1px white;
+    box-sizing: border-box;
+    width: 20%;
+    margin: 1rem auto;
+  }
 }
 
 
 @media screen and (min-width: 600px) {
-  .wedding-header__text {
-    font-size: 2rem;
-    margin-bottom: 6rem;
-  }
-  .wedding-header__container {
-    height: 30rem;
+  .wedding-header {
+    &__text-container {
+      font-size: 2.5rem;
+      margin-bottom: 6rem;
+    }
+
+    &__text-date {
+      font-size: 1.5rem;
+    }
+
+    &__container {
+      height: 30rem;
+    }
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .wedding-header__text {
-    font-size: 2.5rem;
-    margin-bottom: 8rem;
-  }
-  .wedding-header__container {
-    height: 40rem;
+  .wedding-header {
+    &__text-container {
+      font-size: 3rem;
+      margin-bottom: 8rem;
+    }
+
+    &__text-date {
+      font-size: 2rem;
+    }
+
+    &__container {
+      height: 40rem;
+    }
   }
 }
 
 @media screen and (min-width: 1700px) {
-  .wedding-header__text {
-    font-size: 3.5rem;
-    margin-bottom: 11rem;
-  }
-  .wedding-header__container {
-    height: 55rem;
+  .wedding-header {
+    &__text-container {
+      font-size: 4.5rem;
+      margin-bottom: 11rem;
+    }
+
+    &__text-date {
+      font-size: 3rem;
+    }
+
+    &__container {
+      height: 55rem;
+    }
   }
 }
