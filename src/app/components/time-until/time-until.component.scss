@@ -1,5 +1,38 @@
+.wedding-time-until__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 5rem;
+  margin-top: -3px;
+  color: #a3b295;
+}
+
+.wedding-time-until__header-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.wedding-time-until__header-line {
+  width: 5rem;
+  border-top: solid 1px #a3b295;
+  box-sizing: border-box;
+}
+
 .wedding-time-until__clock-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 4rem;
+}
+
+.wedding-time-until {
+  &__clock-value {
+    font-size: 4rem;
+  }
+
+  &__clock-label {
+    font-size: 1rem;
+  }
 }
