@@ -11,7 +11,7 @@
 .wedding-time-until__header-container {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -27,12 +27,56 @@
   gap: 4rem;
 }
 
+.wedding-time-until__unit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .wedding-time-until {
   &__clock-value {
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
 
   &__clock-label {
-    font-size: 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .wedding-time-until {
+    &__clock-value {
+      font-size: 2.5rem;
+    }
+
+    &__clock-label {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wedding-time-until {
+    &__clock-value {
+      font-size: 4rem;
+    }
+
+    &__clock-label {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .wedding-time-until {
+    &__clock-value {
+      font-size: 5rem;
+    }
+
+    &__clock-label {
+      font-size: 1rem;
+    }
   }
 }
