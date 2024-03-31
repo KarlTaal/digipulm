@@ -2,10 +2,26 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  background: white;
+  padding: 5rem 10rem;
+  color: #a3b295;
+}
+
+.wedding-location__info-text {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.wedding-location__separator{
+  border-top: solid 1px #a3b295;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1rem 0;
 }
 
 iframe {
   border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   min-height: 20rem;
 }
 
