@@ -25,7 +25,7 @@
 }
 
 .wedding-timetable__card {
-  padding: 3rem 5rem 5rem 5rem;
+  padding: 3rem 2rem 5rem 2rem;
   background: #ece0e4;
   display: flex;
   flex-direction: column;
@@ -34,9 +34,20 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.wedding-timetable__card-information-text {
-  text-align: center;
-  margin: 0;
+.wedding-timetable__card-information {
+  &--text {
+    text-align: center;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  &--list {
+    li:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    font-size: 1.1rem;
+  }
 }
 
 .wedding-timetable__card-separator {
@@ -60,13 +71,18 @@
   &--drinking-classes {
     mask: url(../../../assets/drinking-classes.svg) center/cover;
   }
+
+  &--home {
+    mask: url(../../../assets/home.svg) center/cover;
+  }
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 980px) {
   .wedding-timetable__cards-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 3rem;
+    margin: 0 2rem;
   }
 }
