@@ -1,0 +1,51 @@
+.wedding-gallery__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  gap: 1rem;
+  color: #a3b295;
+
+  &--actions {
+    display: flex;
+    gap: 5rem;
+  }
+}
+
+.wedding-gallery {
+  margin: 6rem 0 0 0;
+  text-align: center;
+}
+
+.wedding-gallery-text {
+  font-size: 1rem;
+}
+
+.wedding-gallery__icon {
+  display: block;
+  min-height: 3rem;
+  min-width: 3rem;
+  background: currentColor;
+  color: #a3b295;
+
+  &--camera {
+    mask: url(../../../assets/camera.svg) center/cover;
+  }
+
+  &--video {
+    mask: url(../../../assets/video.svg) center/cover;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wedding-gallery-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .wedding-gallery-text {
+    font-size: 1.4rem;
+  }
+}
